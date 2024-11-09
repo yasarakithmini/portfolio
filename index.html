@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio </title>
+        <link rel="stylesheet" type="text/css" href= "../Portfolio/style.css">
+
+
+    </head>
+    <body>
+        <!----hero section start-->
+        <div class="hero">
+            <nav>
+            <h2 class = "logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href= "#">Home</a></li>
+                <li><a href= "#">About </a></li>
+                <li><a href= "#">Contact</a></li>
+           
+            </ul>
+            </nav>
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Yasara <span>Kithmini</span></h1>
+                <h3>I'm a Computer Science Undergraduate at University of Westminster.</h3>
+            </div>
+            
+        </div>
+        <!-----About section start---->
+        <section class="about">
+            
+              <div class="row">
+              <div class=" about-col-1">
+                <img src="../Portfolio/main.jpg">
+              </div>  
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <h5>Undergraduate <span>BSc(Hons) Computer Science</span></h5>
+                    <p>I am a computer science undergraduate with a lot of expertise in client-side and
+                        server-side programming, machine learning and database management. I am an
+                        enthusiastic, reliable and hardworking individual who can adapt to any kind of
+                        challenging situation and interact effectively as a team player. While pursuing my
+                        degree and preparing for my future profession, I am thrilled at the prospect of
+                        advancing both intellectually and professionally.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+        
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Java</li>
+                                <li>Java Script</li>
+                                <li>Python</li>
+                                <li>MySQL</li>
+                                <li>Object Oriented Programming (OOP)</li>
+                                <li>React JS</li>
+                                <li>Node JS</li>
+                                <li>MS Excel</li>
+                                <li>R Programming</li>
+                                <li>GitHub</li>
+                                <li>MATLAB Simulink</li>
+                                
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Informatics Institute of Technology (UoW)<br>BSc(Hons): Computer Science</li>
+                                <li>Visakha Vidyalaya, Colombo 05,<br>Pearson Edexcel International Advanced Level</li>
+                                <li>Visakha Vidyalaya , Colombo 05,<br>G.C.E Ordinary Level</li>
+                            
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li>E-therapy Platform Powered by Emotion Recognition (2022 - 2023)<br>Second Year Software Development Group Project</li>
+                                <li>Westminster Skin Consultation System (2022)<br>Designed a Software for Consulting Doctors Using Java</li>
+                                <li>Fuel Queue Management System (2022)<br>Java Based Software Designed to Manage Fuel Queues</li>
+                                <li>SL Soccer Webpage (2022)<br>Webpage Designed for SL Soccer. HTML, CSS and Java Script Based Web Page</li>
+
+                            </ul>
+
+                        </div>
+                    
+                </div>
+    
+              </div>
+
+
+
+
+            
+
+
+
+
+
+        </section>
+        <!------------contact---------->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>Email - yasarakithmini9@gmail.com</p>
+                        <p>Tel No - +94764106384</p>
+                       
+
+                    </div>
+                    <div class="contact-right"></div> 
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+    </body>
+
+</html>
