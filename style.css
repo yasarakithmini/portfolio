@@ -1,145 +1,121 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
-
 }
-.hero{
+.hero {
     height: 100vh;
     width: 100%;
-    background-image: url(../Portfolio/background.jpg);
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-
 }
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-
+    padding: 45px 8%;
 }
-.logo{
+.logo {
     color: black;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
-
 }
-span{
+span {
     color: blueviolet;
-    
 }
 nav ul li {
-    list-style-type: none;
+    list-style: none;
     display: inline-block;
     padding: 10px 25px;
-
 }
-nav ul li a{
+nav ul li a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
     text-transform: capitalize;
-    position: relative;
-
 }
-nav ul li a:hover{
+nav ul li a:hover {
     color: blueviolet;
     transition: .4s;
-    width: 100%;
-    
-
 }
-.content{
+.content {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
-h1{
+h1 {
     color: black;
-    margin: 20px 0px 20px;
+    margin: 20px 0;
     font-size: 60px;
 }
-h3{
-    color:black;
+h3 {
+    color: black;
     font-size: 25px;
     margin-bottom: 50px;
 }
-h4{
-   color:gray;
-   letter-spacing: 2px;
-   font-size: 25px; 
+h4 {
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 25px;
 }
 
-/*----------about------------*/
-
-.about{
-    width: 80%;
-    margin: 50px 130px 50px;
-    padding: 100px 0;
+/* About */
+.about {
+    width: 100%;
+    padding: 100px 8%;
     background-color: gray;
+    background-position: center;
+    box-sizing: border-box;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
-
 }
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
     margin-left: 10px;
 }
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
-    
 }
-
-.about-col-2 h2{
-    color:black;
+.about-col-2 h2 {
     font-size: 55px;
-    text-transform: capitalize;
     margin-bottom: 20px;
 }
-.about-col-2 h5{
-    color: black;
-    letter-spacing: 2px;
+.about-col-2 h5 {
     font-size: 22px;
     margin-bottom: 25px;
-    text-transform: capitalize;
 }
-.about-col-2 p{
-    color: black;
-    letter-spacing:1px;
-    line-height: 28px;
+.about-col-2 p {
     font-size: 18px;
+    line-height: 28px;
     margin-bottom: 45px;
 }
-.tab-titles{
-    display:flex;
+.tab-titles {
+    display: flex;
     margin: 20px 0 40px;
-   
-
 }
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
-    content:'';
-    width:0;
+.tab-links::after {
+    content: '';
+    width: 0;
     height: 3px;
     background: blueviolet;
     position: absolute;
@@ -147,55 +123,54 @@ h4{
     bottom: -8px;
     transition: 0.4s;
 }
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
-.tab-contents ul{
+.tab-contents ul {
     background: rgb(210, 208, 211);
     padding: 40px;
     border-radius: 15px;
-    margin-right: 10px;
     margin-top: -30px;
     transition: background 0.4s, transform 0.4s;
 }
-
-.tab-contents ul:hover{
+.tab-contents ul:hover {
     background: #9b67cb;
     transform: translateY(-10px);
-
 }
-.tab-contents ul li{
-    list-style:none;
+.tab-contents ul li {
+    list-style: none;
     margin-bottom: 20px;
     padding-left: 20px;
-    position: relative;
-    font-size: m;
     font-weight: bold;
-    letter-spacing: 1px;
-    
-    
 }
-.tab-contents ul li::before{
-    content: '\2022';
+.tab-contents ul li::before {
+    content: '•';
     color: black;
-    list-style-position: outside;
 }
-
-.tab-contents{
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
+
+/* Contact */
 .contact {
-    width: 80%;
-    margin: 50px 130px 50px;
-    padding: 100px 0;
+    width: 100%;
+    padding: 100px 8%;
     background-color: gray;
+    background-position: center;
+    box-sizing: border-box;
 }
+
 .contact-left p {
     font-size: 25px;
-    font-style: normal;
-
+    margin: 8px 0;
 }
-
+.contact-left a {
+    color: black;
+    text-decoration: none;
+}
+.contact-left a:hover {
+    color: blueviolet;
+}
