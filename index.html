@@ -1,111 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasara Kithmini - Software Engineer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Yasara <span>Kithmini</span></h1>
-            <h3>I'm a Computer Science Undergraduate at University of Westminster.</h3>
-        </div>
+  <div class="bg-animation"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">YK</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./main.jpg" alt="Profile Image">
-            </div>
-            <div class="about-col-2">
-                <h2>About Me</h2>
-                <h5>Associate Software Engineer <span>BSc(Hons) Computer Science</span></h5>
-                <p>I am a motivated final-year Computer Science undergraduate with 1 year of experience as a Full-Stack Engineer. Proficient in React.js, Laravel, Flask, SwiftUI, MySQL and Machine Learning technologies, I thrive in creating innovative and efficient solutions for web and application development. I am highly adaptable, eager to learn, and continuously strive to enhance my technical knowledge. I am also pursuing an LLB, showcasing my dedication to interdisciplinary growth and holistic problem-solving.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li>HTML, CSS, JavaScript, PHP</li>
-                        <li>Python, Java, Swift, R</li>
-                        <li>React, Laravel, Flask, Angular, Spring Boot</li>
-                        <li>MySQL, MongoDB</li>
-                        <li>GitHub, GitLab, Postman, Jupyter Notebook</li>
-                        <li>OOP, Machine Learning, VS Code, IntelliJ, XAMPP</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li>University of Westminster<br>BSc(Hons): Computer Science (Jan 2022 - Present)</li>
-                        <li>University of Staffordshire<br>LLB (Hons): Law (2024 - Present)</li>
-                        <li>British Council, Colombo<br>Pearson Edexcel IAL (Biology, Chemistry, Physics)</li>
-                        <li>Visakha Vidyalaya, Colombo<br>G.C.E Ordinary Level (9 A's)</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="projects">
-                    <ul>
-                        <li>FixFit: ML-Based Personalized Fitness Platform<br>React.js, Flask, KNN Model for workout recommendations</li>
-                        <li>E-Therapy Platform Powered by Emotion Recognition<br>AI-driven therapy platform using TensorFlow, PyTorch, ReactJS, Flask</li>
-                        <li>Westminster Skin Consultation System<br>Java-based patient record and appointment management software</li>
-                        <li>Fuel Queue Management System<br>Java-based application for managing fuel queues and tracking vehicles</li>
-                        <li>SL Soccer Webpage<br>Dynamic webpage using HTML, CSS, and JavaScript</li>
-                    </ul>
-                </div>
-            </div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Yasara Kithmini</h1>
+        <div class="subtitle">Software Engineer & ML Enthusiast</div>
+        <div class="description">
+          Passionate Computer Science graduate with strong expertise in full-stack development, hands-on experience in machine learning and cybersecurity, while also exploring domains like operational research and optimization and applied analytics. I enjoy creating innovative, scalable solutions and thrive in diverse technical environments where I can apply both coding and analytical thinking to solve real-world problems.
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p>Email: <a href="mailto:yasarakithmini9@gmail.com">yasarakithmini9@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+94764106384">+94 76 410 6384</a></p>
-                    <p>Address: 7/12, Kalutara Road, Bandaragama</p>
-                    <p>LinkedIn: <a href="https://linkedin.com/in/yasara-kithmini-1684a6221" target="_blank">linkedin.com/in/yasara-kithmini-1684a6221</a></p>
-                </div>
-            </div>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
         </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">Y</div>
+        <h3>Yasara Kithmini</h3>
+        <p>BSc (Hons) Computer Science - Second Upper Honours<br>University of Westminster (UK)</p>
+        <div class="profile-stats">
+          <div class="stat">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Years Study</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">1+</div>
+            <div class="stat-label">Year Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Major Projects</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Tab Switching Script -->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+  <section id="about" class="fade-in">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p class="section-subtitle">
+        A dedicated software engineer with a passion for creating innovative solutions and pushing the boundaries of technology.
+      </p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.8; color: rgba(255, 255, 255, 0.8);">
+      <p>I'm a Computer Science graduate from the University of Westminster with a strong foundation in software development, machine learning, and cybersecurity. My journey in technology has been driven by curiosity and a desire to solve complex problems through elegant code.</p>
+      <br>
+      <p>With one year of full-time software engineering experience, I've contributed to the entire development lifecycle, from system analysis and design to implementation and testing. I thrive in Agile environments and enjoy collaborating with cross-functional teams to deliver high-quality, user-centered applications.</p>
+    </div>
+  </section>
 
-        function opentab(tabname){
-            for (let tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (let tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+  <section id="skills" class="fade-in">
+    <div class="section-title">
+      <h2>Skills & Expertise</h2>
+      <p class="section-subtitle">
+        A comprehensive skill set spanning full-stack development, machine learning, and modern software practices.
+      </p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Swift</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">R</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-cogs"></i> Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Laravel</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">SwiftUI</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">KNN</span>
+          <span class="skill-tag">CNN</span>
+          <span class="skill-tag">Decision Trees</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">Data Analysis</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-shield-alt"></i> Software Engineering & Security</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Cybersecurity</span>
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">System Design</span>
+          <span class="skill-tag">Networking</span>
+        </div>
+      </div>
+      <div class="skill-category">
+       <h3><i class="fas fa-chart-line"></i> Data Analysis & Business Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Microsoft Excel</span>
+          <span class="skill-tag">Excel Solver</span>
+          <span class="skill-tag">Data Visualization</span>
+          <span class="skill-tag">Google Sheets</span>
+          <span class="skill-tag">Optimization Models</span>
+        </div>
+      
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+         
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-wrench"></i> Tools & Technologies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Visual Studio Code</span>
+          <span class="skill-tag">IntelliJ IDEA</span>
+          <span class="skill-tag">XAMPP</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">GitLab</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Jupyter Notebook</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">
+        A showcase of my technical expertise through real-world applications and innovative solutions.
+      </p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>FixFit</h3>
+            <p>Personalized ML-based fitness platform using KNN algorithms for intelligent workout recommendations tailored to individual fitness goals and preferences.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/fitness-app-frontend.git" title="View Code"><i class="fab fa-github"></i></a>
+            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">KNN</span>
+          <span class="tech-tag">Flask</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>E - Therapy Platform Powered by Emotion Recognition</h3>
+            <p>This project focuses on developing an e-therapy platform with emotion recognition to enhance therapist-patient interactions by analyzing facial expressions, enabling real-time emotional feedback, and improving therapy outcomes through AI-driven insights using frameworks like TensorFlow and PyTorch for machine learning, ReactJS. for front-end development and Flask Python for back-end development.</p>
+          </div>
+          <div class="project-links">
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">CNN</span>
+          <span class="tech-tag">ReactJS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">Python</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>Skooler Application</h3>
+            <p>Skooler is a customizable e-commerce platform for schools, where students and parents can buy school products, book event tickets, and view announcements. Each school has its own dashboard to manage products, events, and communication easily.</p>
+          </div>
+          <div class="project-links">
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">ReactJS</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>Westminster Skin Consultation System</h3>
+            <p>This system is a Java-based software designed to facilitate doctor consultations by efficiently managing patient records, appointments, and treatment history using Object-Oriented Programming principles.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/Westminster_skinConsultationManager.git" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">GUI</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>Fuel queue management system</h3>
+            <p>This system is a Java-based application designed to streamline fuel distribution by efficiently managing queues, tracking vehicles, and ensuring fair and organized fuel allocation.</p>
+          </div>
+          <div class="project-links">
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">GUI</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>SL Soccer Website</h3>
+            <p>This web page is a collaborative project using HTML, CSS, and JavaScript to create a dynamic platformshowcasing the online shop, soccer events and member profiles.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/Soccer_Shop_Website.git" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>Simple Calculator</h3>
+            <p>This Simple Calculator application is built using Java. It performs basic arithmetic operations with a graphical user interface (GUI).</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/simpleCalculator.git" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">GUI</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>Portfolio Website</h3>
+            <p>This is a responsive personal portfolio website built using HTML and CSS. It showcases my skills, projects, and professional background in a clean, modern layout.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/portfolio.git" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>News Categorization using ML</h3>
+            <p>The objective of this project is to apply AI techniques to the problem domain of News Publishing and Writing. In particular, I worked on the categorization of news articles into predefined categories such as business, education, entertainment, sports, and technology.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yasarakithmini/news_categorization.git" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">SVM</span>
+          <span class="tech-tag">Supervised Learning</span>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <div class="section-title">
+      <h2>Professional Experience</h2>
+      <p class="section-subtitle">
+        My journey through education and professional development in software engineering.
+      </p>
+    </div>
+    
+    <div class="timeline">
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Software Engineering Intern</h3>
+          <h4>Hologo World Inc, Maldives</h4>
+          <h4>Full-time (1 Year)</h4>
+          <p>Contributed across the complete software development lifecycle from system analysis and design to implementation and testing. Collaborated with cross-functional teams in Agile environments on multimedia-rich applications.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Full-stack development experience</li>
+            <li>Agile methodology implementation</li>
+            <li>Quality assurance and testing</li>
+            <li>User-centered design principles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>BSc (Hons) Computer Science - Second Upper Honours</h3>
+          <h4>University of Westminster (UK)</h4>
+          <p>Four-year honours degree with emphasis on software engineering, data science, machine learning, and cybersecurity. Developed strong foundation in theoretical computer science and practical application development.</p>
+        </div>
+      </div>
+     
+      
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">
+        Let's discuss opportunities and how we can work together to create something amazing.
+      </p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+      </form>
+      <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <p style="color: var(--gray); margin-bottom: 1rem;">
+          📧 yasarakithmini9@gmail.com | 🌐 <a href="https://github.com/yasarakithmini" style="color: var(--secondary);">GitHub</a>
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+          <a href="https://github.com/yasarakithmini" class="btn btn-secondary" style="padding: 0.8rem 1.5rem;">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/yasara-kithmini-1684a6221/" class="btn btn-secondary" style="padding: 0.8rem 1.5rem;">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
